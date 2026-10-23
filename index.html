@@ -1,6 +1,58 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solid capstone practice: CTA, FAQ, testimonials, pricing, contact, blog and footer."
+    />
+    <title>Solid — Lower Half | Tailwind Capstone</title>
+    <!-- Thu tu: Tailwind -> thu vien -> CSS tu viet -->
+    <link rel="stylesheet" href="libs/tailwind.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+    <link rel="stylesheet" href="libs/animate.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Khi ghep: giu mot the main chung, dat cac section nay sau phan cua teammate. -->
+    <main id="solid-lower" class="solid-scope">
+      <h1 class="sr-only">Solid SaaS — plans, customer stories and contact</h1>
+
+      <!-- 1. CTA: banner keu goi hanh dong -->
+      <section
+        id="solid-cta"
+        class="solid-cta-section"
+        aria-labelledby="solid-cta-title"
+      >
+        <div class="solid-wide solid-cta">
+          <div
+            class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between"
+          >
+            <div class="md:w-[60%] xl:w-1/2 wow animate__fadeInLeft">
+              <h2 id="solid-cta-title">
+                Join With Us Today &amp; Increase Your Productivity
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor eros. Donec vitae tortor lacus. Phasellus
+                aliquam ante in maximus.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between gap-8 xl:w-[45%] wow animate__fadeInRight"
+            >
+              <img
+                src="images/cta.png"
+                alt=""
+                class="hidden xl:block"
+                width="299"
+                height="299"
+              />
+              <a href="#solid-contact" class="solid-button shrink-0"
+                >Sign up free
+                <span aria-hidden="true" class="solid-arrow">→</span></a
+              >
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Solid – SaaS Starter Landing Page</title>
@@ -336,6 +388,102 @@
         </div>
       </section>
 
+      <!-- 2. FAQ: Flowbite Accordion. ID phai duy nhat khi ghep bai. -->
+      <section id="solid-faq" class="solid-faq solid-section-bottom">
+        <div
+          class="solid-container solid-dotted grid grid-cols-1 items-center gap-8 md:grid-cols-2 xl:gap-32"
+        >
+          <div class="wow animate__fadeInLeft">
+            <span class="solid-eyebrow">OUR FAQS</span>
+            <h2 class="solid-faq-title">
+              Frequently Asked <span>Questions</span>
+            </h2>
+            <a href="#solid-contact" class="solid-link"
+              >Know More
+              <span aria-hidden="true" class="solid-arrow">→</span></a
+            >
+          </div>
+          <div
+            class="solid-faq-box wow animate__fadeInRight"
+            id="solid-accordion"
+            data-accordion="collapse"
+            data-active-classes="solid-faq-active"
+            data-inactive-classes="solid-faq-idle"
+          >
+            <div class="solid-faq-item">
+              <h3 id="solid-faq-heading-1">
+                <button
+                  type="button"
+                  class="solid-faq-button flex w-full items-center justify-between gap-5 text-left"
+                  data-accordion-target="#solid-faq-body-1"
+                  aria-expanded="true"
+                  aria-controls="solid-faq-body-1"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur</span>
+                  <span class="solid-plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                id="solid-faq-body-1"
+                class="block"
+                aria-labelledby="solid-faq-heading-1"
+              >
+                <p class="solid-faq-answer">
+                  We provide digital experience services to startups and small
+                  businesses. We help our clients succeed by creating brand
+                  identities, digital experiences.
+                </p>
+              </div>
+            </div>
+            <div class="solid-faq-item">
+              <h3 id="solid-faq-heading-2">
+                <button
+                  type="button"
+                  class="solid-faq-button flex w-full items-center justify-between gap-5 text-left"
+                  data-accordion-target="#solid-faq-body-2"
+                  aria-expanded="false"
+                  aria-controls="solid-faq-body-2"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur</span>
+                  <span class="solid-plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                id="solid-faq-body-2"
+                class="hidden"
+                aria-labelledby="solid-faq-heading-2"
+              >
+                <p class="solid-faq-answer">
+                  We provide digital experience services to startups and small
+                  businesses. We help our clients succeed by creating brand
+                  identities, digital experiences.
+                </p>
+              </div>
+            </div>
+            <div class="solid-faq-item">
+              <h3 id="solid-faq-heading-3">
+                <button
+                  type="button"
+                  class="solid-faq-button flex w-full items-center justify-between gap-5 text-left"
+                  data-accordion-target="#solid-faq-body-3"
+                  aria-expanded="false"
+                  aria-controls="solid-faq-body-3"
+                >
+                  <span>Lorem ipsum dolor sit amet, consectetur</span>
+                  <span class="solid-plus" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div
+                id="solid-faq-body-3"
+                class="hidden"
+                aria-labelledby="solid-faq-heading-3"
+              >
+                <p class="solid-faq-answer">
+                  We provide digital experience services to startups and small
+                  businesses. We help our clients succeed by creating brand
+                  identities, digital experiences.
+                </p>
+              </div>
       <section class="overflow-hidden border border-x-0 border-y-stroke bg-alabaster py-11">
         <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div
@@ -544,6 +692,120 @@
         </div>
       </section>
 
+      <!-- 3. TESTIMONIALS: Slick hien 2 the tren desktop, 1 the tren mobile. -->
+      <section
+        id="solid-testimonials"
+        class="solid-testimonials"
+        aria-label="Client testimonials"
+      >
+        <div class="solid-container">
+          <div class="solid-heading text-center wow animate__fadeInUp">
+            <span class="solid-badge">TESTIMONIALS</span>
+            <h2>Client’s Testimonials</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+              ante in maximus.
+            </p>
+          </div>
+          <div
+            class="solid-testimonial-slider solid-content-gap wow animate__fadeInUp"
+          >
+            <div class="solid-slide">
+              <article class="solid-testimonial">
+                <div
+                  class="solid-person flex items-start justify-between gap-5"
+                >
+                  <div>
+                    <h3>Devid Smith</h3>
+                    <p>Founter @democompany</p>
+                  </div>
+                  <img
+                    src="images/user-01.png"
+                    width="60"
+                    height="50"
+                    alt="Devid Smith"
+                    loading="lazy"
+                  />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                  elementum nisi, convallis fringilla ante nibh non urna.
+                </p>
+              </article>
+            </div>
+            <div class="solid-slide">
+              <article class="solid-testimonial">
+                <div
+                  class="solid-person flex items-start justify-between gap-5"
+                >
+                  <div>
+                    <h3>Jhon Abraham</h3>
+                    <p>Founter @democompany</p>
+                  </div>
+                  <img
+                    src="images/user-02.png"
+                    width="60"
+                    height="50"
+                    alt="Jhon Abraham"
+                    loading="lazy"
+                  />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                  elementum nisi, convallis fringilla ante nibh non urna.
+                </p>
+              </article>
+            </div>
+            <div class="solid-slide">
+              <article class="solid-testimonial">
+                <div
+                  class="solid-person flex items-start justify-between gap-5"
+                >
+                  <div>
+                    <h3>Devid Smith</h3>
+                    <p>Founter @democompany</p>
+                  </div>
+                  <img
+                    src="images/user-01.png"
+                    width="60"
+                    height="50"
+                    alt="Devid Smith"
+                    loading="lazy"
+                  />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                  elementum nisi, convallis fringilla ante nibh non urna.
+                </p>
+              </article>
+            </div>
+            <div class="solid-slide">
+              <article class="solid-testimonial">
+                <div
+                  class="solid-person flex items-start justify-between gap-5"
+                >
+                  <div>
+                    <h3>Jhon Abraham</h3>
+                    <p>Founter @democompany</p>
+                  </div>
+                  <img
+                    src="images/user-02.png"
+                    width="60"
+                    height="50"
+                    alt="Jhon Abraham"
+                    loading="lazy"
+                  />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                  elementum nisi, convallis fringilla ante nibh non urna.
+                </p>
+              </article>
       <section class="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div class="flex items-center gap-8 lg:gap-32.5">
@@ -659,6 +921,184 @@
         </div>
       </section>
 
+      <!-- 4. PRICING: cung mot class solid-plan cho ca ba the -->
+      <section id="solid-pricing" class="solid-pricing solid-section-bottom">
+        <div class="solid-container">
+          <div class="solid-heading text-center wow animate__fadeInUp">
+            <span class="solid-badge">PRICING PLANS</span>
+            <h2>Simple Pricing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+              ante in maximus.
+            </p>
+          </div>
+          <div
+            class="solid-price-grid solid-dotted solid-content-gap grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-12"
+          >
+            <article
+              class="solid-plan relative wow animate__fadeInUp"
+              data-wow-delay="0.0s"
+            >
+              <h3>$ 100<span>/month</span></h3>
+              <h4>Small Pack</h4>
+              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <ul>
+                <li>300 GB Storage</li>
+                <li>Unlimited Photos and Videos</li>
+                <li class="solid-unavailable">Exclusive Support</li>
+                <li class="solid-unavailable">Custom Branding Strategy</li>
+              </ul>
+              <a
+                class="solid-link solid-blue"
+                href="#solid-contact"
+                data-plan="Small Pack"
+                >Get the Plan
+                <span aria-hidden="true" class="solid-arrow">→</span></a
+              >
+            </article>
+            <article
+              class="solid-plan relative wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <span class="solid-popular">POPULAR</span>
+              <h3>$ 200<span>/month</span></h3>
+              <h4>Medium Pack</h4>
+              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <ul>
+                <li>300 GB Storage</li>
+                <li>Unlimited Photos and Videos</li>
+                <li class="">Exclusive Support</li>
+                <li class="solid-unavailable">Custom Branding Strategy</li>
+              </ul>
+              <a
+                class="solid-link solid-blue"
+                href="#solid-contact"
+                data-plan="Medium Pack"
+                >Get the Plan
+                <span aria-hidden="true" class="solid-arrow">→</span></a
+              >
+            </article>
+            <article
+              class="solid-plan relative wow animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <h3>$ 300<span>/month</span></h3>
+              <h4>Large Pack</h4>
+              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <ul>
+                <li>300 GB Storage</li>
+                <li>Unlimited Photos and Videos</li>
+                <li class="">Exclusive Support</li>
+                <li class="">Custom Branding Strategy</li>
+              </ul>
+              <a
+                class="solid-link solid-blue"
+                href="#solid-contact"
+                data-plan="Large Pack"
+                >Get the Plan
+                <span aria-hidden="true" class="solid-arrow">→</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CONTACT: giao dien + HTML validation; chua ket noi server gui mail -->
+      <section id="solid-contact" class="solid-contact-section">
+        <div class="solid-wide solid-contact solid-dotted">
+          <div class="flex flex-col-reverse gap-10 md:flex-row xl:gap-20">
+            <div
+              class="solid-contact-card w-full md:w-3/5 lg:w-3/4 wow animate__fadeInUp"
+            >
+              <h2>Send a message</h2>
+              <form id="solid-contact-form">
+                <div class="grid grid-cols-1 gap-x-14 gap-y-8 lg:grid-cols-2">
+                  <div>
+                    <label class="sr-only" for="solid-name">Full name</label
+                    ><input
+                      id="solid-name"
+                      name="name"
+                      autocomplete="name"
+                      placeholder="Full name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="solid-email"
+                      >Email address</label
+                    ><input
+                      id="solid-email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="Email address"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="solid-subject">Subject</label
+                    ><input
+                      id="solid-subject"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="solid-phone">Phone number</label
+                    ><input
+                      id="solid-phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                </div>
+                <label class="sr-only" for="solid-message">Message</label>
+                <textarea
+                  id="solid-message"
+                  name="message"
+                  placeholder="Message"
+                  rows="3"
+                  required
+                ></textarea>
+                <div
+                  class="flex flex-col items-start justify-between gap-6 xl:flex-row xl:items-center"
+                >
+                  <label class="solid-consent flex items-start gap-3"
+                    ><input type="checkbox" required name="consent" /><span
+                      >By clicking Checkbox, you agree to use our “Form” terms
+                      And consent cookie usage in browser.</span
+                    ></label
+                  >
+                  <button class="solid-button shrink-0" type="submit">
+                    Send Message
+                    <span aria-hidden="true" class="solid-arrow">→</span>
+                  </button>
+                </div>
+                <p
+                  id="solid-contact-status"
+                  class="solid-status"
+                  role="status"
+                ></p>
+              </form>
+            </div>
+            <aside
+              class="solid-contact-info md:w-2/5 lg:w-1/4 wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <h2>Find us</h2>
+              <h3>Our Location</h3>
+              <p>290 Maryam Springs 260,<br />Courbevoie, Paris, France</p>
+              <h3>Email Address</h3>
+              <a href="mailto:yourmail@domainname.com"
+                >yourmail@domainname.com</a
+              >
+              <h3>Phone Number</h3>
+              <a href="tel:+009423346343843">+009 42334 6343 843</a>
+            </aside>
       <section class="relative pb-20 pt-18.5 lg:pb-22.5">
         <div class="relative mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div class="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]">
@@ -835,6 +1275,13 @@
         </div>
       </section>
 
+      <!-- 6. BLOG: hover zoom anh, doi mau tieu de -->
+      <section id="solid-blog" class="solid-blog solid-section">
+        <div class="solid-container">
+          <div class="solid-heading text-center wow animate__fadeInUp">
+            <span class="solid-badge">NEWS &amp; BLOGS</span>
+            <h2>Latest News &amp; Blogs</h2>
+            <p>
       <section class="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
         <div
           class="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-linear-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 xl:py-27.5"
@@ -870,6 +1317,103 @@
               ante in maximus.
             </p>
           </div>
+          <div
+            class="solid-content-gap grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-10"
+          >
+            <article
+              class="solid-blog-card group wow animate__fadeInUp"
+              data-wow-delay="0.0s"
+            >
+              <a
+                href="https://solid.nextjstemplates.com/blog/exploring-the-mern-stack-powering-modern-web-development"
+                class="solid-blog-image block overflow-hidden rounded-lg"
+                aria-label="Exploring MERN Stack: Powering Modern We..."
+              >
+                <img
+                  src="images/blog-01.png"
+                  alt="Photographer holding a camera"
+                  class="w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                  width="368"
+                  height="239"
+                />
+              </a>
+              <div class="solid-blog-body">
+                <h3>
+                  <a
+                    href="https://solid.nextjstemplates.com/blog/exploring-the-mern-stack-powering-modern-web-development"
+                    >Exploring MERN Stack: Powering Modern We...</a
+                  >
+                </h3>
+                <p>
+                  In the world of web development, staying ahead of the curve is
+                  crucial. One technology stack that ha
+                </p>
+              </div>
+            </article>
+            <article
+              class="solid-blog-card group wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <a
+                href="https://solid.nextjstemplates.com/blog/best-ui-components-for-modern-websites"
+                class="solid-blog-image block overflow-hidden rounded-lg"
+                aria-label="Best UI components for modern website..."
+              >
+                <img
+                  src="images/blog-02.png"
+                  alt="Website design on a screen"
+                  class="w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                  width="368"
+                  height="239"
+                />
+              </a>
+              <div class="solid-blog-body">
+                <h3>
+                  <a
+                    href="https://solid.nextjstemplates.com/blog/best-ui-components-for-modern-websites"
+                    >Best UI components for modern website...</a
+                  >
+                </h3>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat.
+                </p>
+              </div>
+            </article>
+            <article
+              class="solid-blog-card group wow animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <a
+                href="https://solid.nextjstemplates.com/blog/the-power-of-uiux-elevating-digital-experiences"
+                class="solid-blog-image block overflow-hidden rounded-lg"
+                aria-label="The Power of UI/UX: Elevating Digital Ex..."
+              >
+                <img
+                  src="images/blog-03.png"
+                  alt="User interface sketches"
+                  class="w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                  width="368"
+                  height="239"
+                />
+              </a>
+              <div class="solid-blog-body">
+                <h3>
+                  <a
+                    href="https://solid.nextjstemplates.com/blog/the-power-of-uiux-elevating-digital-experiences"
+                    >The Power of UI/UX: Elevating Digital Ex...</a
+                  >
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  sit amet dictum neque, laoreet dolor.
+                </p>
+              </div>
+            </article>
           <div class="flex flex-wrap justify-center gap-8 lg:gap-42.5">
             <div class="text-center opacity-0 motion-reduce:animate-none motion-reduce:opacity-100" data-anim="animate-fade-in-down" style="animation-delay: 150ms">
               <h3
@@ -1016,6 +1560,181 @@
       </section>
     </main>
 
+    <!-- 7. FOOTER: nam ngoai main -->
+    <footer id="solid-footer" class="solid-scope solid-footer">
+      <div class="solid-container">
+        <div
+          class="solid-footer-top grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12"
+        >
+          <div class="lg:col-span-5">
+            <a href="#solid-lower" aria-label="Solid home"
+              ><img src="images/logo.svg" width="110" height="30" alt="Solid"
+            /></a>
+            <p class="solid-footer-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <span class="solid-footer-contact-label">CONTACT</span>
+            <a class="solid-footer-email" href="mailto:hello@solid.com"
+              >hello@solid.com</a
+            >
+          </div>
+          <nav class="lg:col-span-2" aria-label="Quick links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#solid-lower">Home</a></li>
+              <li><a href="#solid-cta">Product</a></li>
+              <li><a href="#solid-contact">Careers</a></li>
+              <li><a href="#solid-pricing">Pricing</a></li>
+            </ul>
+          </nav>
+          <nav class="lg:col-span-2" aria-label="Support links">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#solid-cta">Company</a></li>
+              <li><a href="#solid-blog">Press media</a></li>
+              <li><a href="#solid-blog">Our Blog</a></li>
+              <li><a href="#solid-contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="lg:col-span-3">
+            <h3>Newsletter</h3>
+            <p>Subscribe to receive future updates</p>
+            <form
+              id="solid-newsletter"
+              class="solid-newsletter flex items-center"
+            >
+              <label class="sr-only" for="solid-newsletter-email"
+                >Email address</label
+              >
+              <input
+                id="solid-newsletter-email"
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" aria-label="Subscribe to newsletter">
+                <span aria-hidden="true" class="solid-arrow">→</span>
+              </button>
+            </form>
+            <p
+              id="solid-newsletter-status"
+              class="solid-status"
+              role="status"
+            ></p>
+          </div>
+        </div>
+        <div
+          class="solid-footer-bottom flex flex-col items-center justify-between gap-6 md:flex-row"
+        >
+          <nav aria-label="Legal links" class="flex flex-wrap gap-6">
+            <a href="#solid-footer">English</a
+            ><a href="#solid-footer">Privacy Policy</a
+            ><a href="#solid-contact">Support</a>
+          </nav>
+          <p>© 2026 Solid. All rights reserved</p>
+          <div
+            class="solid-social flex items-center gap-5"
+            aria-label="Social links"
+          >
+            <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+            <a href="https://twitter.com/" aria-label="Twitter"
+              ><svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22 5.9c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.3 1.7-2.2-.8.5-1.7.8-2.6 1a4 4 0 0 0-6.9 3.7A11.4 11.4 0 0 1 3.6 4.8a4 4 0 0 0 1.2 5.4c-.6 0-1.2-.2-1.8-.5 0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1.5 1.6 2 2.8 3.8 2.8A8.1 8.1 0 0 1 2 18.3a11.4 11.4 0 0 0 17.5-9.6V8c1-.6 1.8-1.3 2.5-2.1Z"
+                /></svg
+            ></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a
+            ><a href="https://www.behance.net/" aria-label="Behance">Bē</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="#solid-lower"
+      id="solid-back-top"
+      class="solid-back-top"
+      aria-label="Back to top"
+      >↑</a
+    >
+
+    <!-- jQuery phai dung truoc Slick. Chi nap moi thu vien mot lan khi ghep. -->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/flowbite.min.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script>
+      // Ton trong nguoi dung da tat chuyen dong trong he dieu hanh.
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      // Slick: 4 the, moi lan hien va chuyen 2 the => 2 nut cham tren desktop.
+      if (window.jQuery && jQuery.fn.slick) {
+        jQuery(".solid-testimonial-slider").slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: false,
+          infinite: true,
+          autoplay: !reduceMotion,
+          autoplaySpeed: 5000,
+          speed: reduceMotion ? 0 : 500,
+          pauseOnHover: true,
+          pauseOnFocus: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 1, slidesToScroll: 1 },
+            },
+          ],
+        });
+      }
+
+      // Animate.css v4 dung animate__animated, khac ban v3 dung animated.
+      if (window.WOW && !reduceMotion) {
+        new WOW({
+          animateClass: "animate__animated",
+          offset: 60,
+          mobile: true,
+          live: false,
+        }).init();
+      }
+
+      // Demo frontend: chi hien thong bao, khong gia vo da gui email.
+      document
+        .querySelector("#solid-contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.querySelector("#solid-contact-status").textContent =
+            "Demo only: your form is valid. No message has been sent.";
+        });
+      document
+        .querySelector("#solid-newsletter")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.querySelector("#solid-newsletter-status").textContent =
+            "Demo only: email validated, not subscribed.";
+        });
+      document.querySelectorAll("[data-plan]").forEach(function (link) {
+        link.addEventListener("click", function () {
+          document.querySelector("#solid-subject").value =
+            "Interested in " + link.dataset.plan;
+        });
+      });
+      const backTop = document.querySelector("#solid-back-top");
+      function showBackTop() {
+        backTop.classList.toggle("is-visible", window.scrollY > 500);
+      }
+      window.addEventListener("scroll", showBackTop, { passive: true });
+      showBackTop();
 
     <script>
       const tabs = document.querySelectorAll("[data-tab]"),

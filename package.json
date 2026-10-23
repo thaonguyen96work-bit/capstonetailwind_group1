@@ -1,0 +1,12 @@
+{
+  "name": "solid-lower-half-capstone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind-input.css -o ./libs/tailwind.css --minify",
+    "watch": "tailwindcss -i ./src/tailwind-input.css -o ./libs/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
